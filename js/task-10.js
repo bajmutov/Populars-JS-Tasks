@@ -6,8 +6,8 @@ const divBoxes = document.querySelector("#boxes");
 createBtn.addEventListener("click", createBoxes);
 destroyBtn.addEventListener("click", destroyBoxes);
 
-function createBoxes() {
-  const amount = numberElementsField.value;
+function createBoxes(amount) {
+  amount = numberElementsField.value;
   const divBasicSize = 30;
   const fragment = document.createDocumentFragment();
   for (let i = 0; i < amount; i += 1) {
